@@ -8,6 +8,7 @@ Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{version}.tar.bz2
 # Source0-md5:	823010ec78215d476537c9eba9381cdd
 URL:		http://ctorrent.sourceforge.net/
+BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS
+%doc AUTHORS NEWS README
 %attr(755,root,root) %{_bindir}/ctorrent
