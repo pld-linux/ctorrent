@@ -5,7 +5,7 @@ Version:	1.3.3
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-Source0:	http://voxel.dl.sourceforge.net/sourceforge/ctorrent/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{version}.tar.gz
 # Source0-md5:	224ab814d1a71e90dc916d026b7696c4
 URL:		http://ctorrent.sourceforge.net/
 BuildRequires:	openssl-devel >= 0.9.7d
@@ -23,7 +23,7 @@ from the BitTorrent network.
 %description -l pl
 CTorrent jest programem dla konsoli, co oznacza ¿e nie wymaga ¿adnych
 komponentów graficznych (takich jak serwer X) na maszynie, na której
-bedzie uruchamiany, mo¿na go uruchomiæ nawet zdalnie je¶li zajdzie
+bêdzie uruchamiany, mo¿na go uruchomiæ nawet zdalnie je¶li zajdzie
 taka potrzeba. Jest stosunkowo niewielu ludzi, którzy u¿ywaj±
 programów przeznaczonych dla konsoli i chc± u¿ywaæ ich do ¶ci±gania
 plików w tle. CTorrent pomaga dok³adnie w tym zadaniu, zak³adaj±c i¿
