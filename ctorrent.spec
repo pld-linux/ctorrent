@@ -1,12 +1,12 @@
 Summary:	BitTorrent client written in the C++
 Summary(pl):	Klient BitTorrenta napisany w C++
 Name:		ctorrent
-Version:	1.3.3
+Version:	1.3.4
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{version}.tar.gz
-# Source0-md5:	224ab814d1a71e90dc916d026b7696c4
+Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{version}.tar.bz2
+# Source0-md5:	823010ec78215d476537c9eba9381cdd
 URL:		http://ctorrent.sourceforge.net/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
