@@ -1,12 +1,12 @@
-Summary:	BitTorrent client written in the C++.
-Summary(pl):	Klient BitTorrent napisany w C++.
+Summary:	BitTorrent client written in the C++
+Summary(pl):	Klient BitTorrenta napisany w C++
 Name:		ctorrent
-Version:	1.3.2
+Version:	1.3.3
 Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://voxel.dl.sourceforge.net/sourceforge/ctorrent/%{name}-%{version}.tar.gz
-# Source0-md5:  1bc787df91285a9cec8509617c3152d6
+# Source0-md5:  224ab814d1a71e90dc916d026b7696c4
 URL:		http://ctorrent.sourceforge.net/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,10 +23,11 @@ from the BitTorrent network.
 %description -l pl
 CTorrent jest programem dla konsoli, co oznacza ¿e nie wymaga ¿adnych
 komponentów graficznych (takich jak serwer X) na maszynie, na której
-go uruchamiasz, mo¿esz go uruchomiæ nawet zdalnie je¶li chcesz. Jest
-stosunkowo ludzi, którzy u¿ywaj± programów tylko konsolowych i chc±
-u¿ywaæ ich do ¶ci±gania plików w tle. CTorrent dok³adnie w tym ci
-pomo¿e, zak³adaj±c ze u¿ywasz sieci BitTorrent.
+bedzie uruchamiany, mo¿na go uruchomiæ nawet zdalnie je¶li zajdzie taka
+potrzeba. Jest stosunkowo niewielu ludzi, którzy u¿ywaj± programów
+przeznaczonych dla konsoli i chc± u¿ywaæ ich do ¶ci±gania plików w tle.
+CTorrent pomaga dok³adnie w tym zadaniu, zak³adaj±c i¿ u¿ywa siê sieci
+BitTorrent.
 
 %prep
 %setup -q
@@ -45,4 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS
 %attr(755,root,root) %{_bindir}/ctorrent
