@@ -24,7 +24,7 @@ from the BitTorrent network.
 CTorrent jest programem dla konsoli, co oznacza ¿e nie wymaga ¿adnych
 komponentów graficznych (takich jak serwer X) na maszynie, na której
 bêdzie uruchamiany, mo¿na go uruchomiæ nawet zdalnie je¶li zajdzie
-taka potrzeba. Jest sporo osob, które u¿ywaj± serwerów tylko 
+taka potrzeba. Jest sporo osób, które u¿ywaj± serwerów tylko 
 z konsol± i chc± u¿ywaæ ich do ¶ci±gania plików w tle. 
 CTorrent pomaga dok³adnie w tym zadaniu, zak³adaj±c i¿
 u¿ywa siê sieci BitTorrent.
