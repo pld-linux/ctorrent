@@ -3,7 +3,7 @@ Summary(pl):	Klient BitTorrent napisany w C++.
 Name:		ctorrent
 Version:	1.3.2
 Release:	1
-License:	GPL
+License:	unknown
 Group:		Applications/Networking
 Source0:	http://voxel.dl.sourceforge.net/sourceforge/ctorrent/%{name}-%{version}.tar.gz
 # Source0-md5:  1bc787df91285a9cec8509617c3152d6
@@ -37,7 +37,8 @@ pomo¿e, zak³adaj±c ze u¿ywasz sieci BitTorrent.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
