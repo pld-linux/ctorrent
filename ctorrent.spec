@@ -3,11 +3,11 @@ Summary(pl):	Klient BitTorrent napisany w C++.
 Name:		ctorrent
 Version:	1.3.2
 Release:	1
-License:	unknown
+License:	GPL
 Group:		Applications/Networking
 Source0:	http://voxel.dl.sourceforge.net/sourceforge/ctorrent/%{name}-%{version}.tar.gz
 # Source0-md5:  1bc787df91285a9cec8509617c3152d6
-URL:		http://ctorrent.sourceforge.net
+URL:		http://ctorrent.sourceforge.net/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
