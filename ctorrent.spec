@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://voxel.dl.sourceforge.net/sourceforge/ctorrent/%{name}-%{version}.tar.gz
-# Source0-md5:  224ab814d1a71e90dc916d026b7696c4
+# Source0-md5:	224ab814d1a71e90dc916d026b7696c4
 URL:		http://ctorrent.sourceforge.net/
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
