@@ -1,13 +1,17 @@
 Summary:	BitTorrent client written in the C++
 Summary(pl):	Klient BitTorrenta napisany w C++
 Name:		ctorrent
-Version:	1.3.4
-Release:	1
+%define	_base_version 1.3.4
+%define	_dnh_version dnh2
+Version:	%{_base_version}_%{_dnh_version}
+Release:	0.1
 License:	GPL
 Group:		Applications/Networking
-Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{_base_version}.tar.bz2
 # Source0-md5:	823010ec78215d476537c9eba9381cdd
-URL:		http://ctorrent.sourceforge.net/
+Patch0:		http://www.rahul.net/dholmes/ctorrent/patchset-ctorrent-%{_base_version}-%{_dnh_version}.diff
+#URL:		http://ctorrent.sourceforge.net/
+URL:		http://www.rahul.net/dholmes/ctorrent/
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,7 +35,8 @@ CTorrent pomaga dok³adnie w tym zadaniu, zak³adaj±c i¿
 u¿ywa siê sieci BitTorrent.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{_base_version}
+%patch0 -p0
 
 %build
 %configure
