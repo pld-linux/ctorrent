@@ -12,6 +12,8 @@ Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{_base_version}.tar.bz2
 Patch0:		http://www.rahul.net/dholmes/ctorrent/patchset-ctorrent-%{_base_version}-%{_dnh_version}.diff
 #URL:		http://ctorrent.sourceforge.net/
 URL:		http://www.rahul.net/dholmes/ctorrent/
+BuildRequires:	autoconf >= 2.50
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,11 +41,17 @@ u¿ywa siê sieci BitTorrent.
 %patch0 -p0
 
 %build
-%configure
+%{__aclocal}
+%{__autoconf}
+%{__autoheader}
+%{__automake}
+%configure \
+	CPPFLAGS="-I/usr/include/openssl"
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT 
 
