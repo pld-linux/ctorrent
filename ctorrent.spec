@@ -1,5 +1,5 @@
 Summary:	BitTorrent client written in the C++
-Summary(pl):	Klient BitTorrenta napisany w C++
+Summary(pl.UTF-8):   Klient BitTorrenta napisany w C++
 Name:		ctorrent
 %define	_base_version 1.3.4
 %define	_dnh_version dnh2
@@ -27,14 +27,14 @@ servers and want to use them to download files in the background.
 CTorrent can help you do exactly this, assuming you are downloading
 from the BitTorrent network.
 
-%description -l pl
-CTorrent jest programem dla konsoli, co oznacza ¿e nie wymaga ¿adnych
-komponentów graficznych (takich jak serwer X) na maszynie, na której
-bêdzie uruchamiany, mo¿na go uruchomiæ nawet zdalnie je¶li zajdzie
-taka potrzeba. Jest sporo osób, które u¿ywaj± serwerów tylko 
-z konsol± i chc± u¿ywaæ ich do ¶ci±gania plików w tle. 
-CTorrent pomaga dok³adnie w tym zadaniu, zak³adaj±c i¿
-u¿ywa siê sieci BitTorrent.
+%description -l pl.UTF-8
+CTorrent jest programem dla konsoli, co oznacza Å¼e nie wymaga Å¼adnych
+komponentÃ³w graficznych (takich jak serwer X) na maszynie, na ktÃ³rej
+bÄ™dzie uruchamiany, moÅ¼na go uruchomiÄ‡ nawet zdalnie jeÅ›li zajdzie
+taka potrzeba. Jest sporo osÃ³b, ktÃ³re uÅ¼ywajÄ… serwerÃ³w tylko 
+z konsolÄ… i chcÄ… uÅ¼ywaÄ‡ ich do Å›ciÄ…gania plikÃ³w w tle. 
+CTorrent pomaga dokÅ‚adnie w tym zadaniu, zakÅ‚adajÄ…c iÅ¼
+uÅ¼ywa siÄ™ sieci BitTorrent.
 
 %prep
 %setup -q -n %{name}-%{_base_version}
