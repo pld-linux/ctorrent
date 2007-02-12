@@ -1,5 +1,5 @@
 Summary:	BitTorrent client written in the C++
-Summary(pl.UTF-8):   Klient BitTorrenta napisany w C++
+Summary(pl.UTF-8):	Klient BitTorrenta napisany w C++
 Name:		ctorrent
 %define	_base_version 1.3.4
 %define	_dnh_version dnh2
