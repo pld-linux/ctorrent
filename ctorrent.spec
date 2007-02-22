@@ -1,15 +1,14 @@
-Summary:	BitTorrent client written in the C++
-Summary(pl.UTF-8):	Klient BitTorrenta napisany w C++
+Summary:	Enhanced CTorrent - BitTorrent client written in the C++
+Summary(pl.UTF-8):	Enhanced CTorrent - Klient BitTorrenta napisany w C++
 Name:		ctorrent
 %define	_base_version 1.3.4
-%define	_dnh_version dnh2
+%define	_dnh_version dnh2.2
 Version:	%{_base_version}_%{_dnh_version}
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Networking
-Source0:	http://dl.sourceforge.net/ctorrent/%{name}-%{_base_version}.tar.bz2
-# Source0-md5:	823010ec78215d476537c9eba9381cdd
-Patch0:		http://www.rahul.net/dholmes/ctorrent/patchset-ctorrent-%{_base_version}-%{_dnh_version}.diff
+Source0:	http://www.rahul.net/dholmes/ctorrent/ctorrent-%{_base_version}-%{_dnh_version}.tar.gz
+# Source0-md5:	76484082d3d44d7d1fbc9f2e0e33440f
 #URL:		http://ctorrent.sourceforge.net/
 URL:		http://www.rahul.net/dholmes/ctorrent/
 BuildRequires:	autoconf >= 2.50
@@ -37,8 +36,7 @@ CTorrent pomaga dokładnie w tym zadaniu, zakładając iż
 używa się sieci BitTorrent.
 
 %prep
-%setup -q -n %{name}-%{_base_version}
-%patch0 -p0
+%setup -q -n %{name}-%{_dnh_version}
 
 %build
 %{__aclocal}
