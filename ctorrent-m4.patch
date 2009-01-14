@@ -1,17 +1,6 @@
---- ctorrent-dnh3.2/version.m4.wiget	2007-07-24 01:42:56.000000000 +0200
-+++ ctorrent-dnh3.2/version.m4	2008-01-14 19:03:39.000000000 +0100
-@@ -1,5 +1,5 @@
--m4_define([m4_PACKAGE_NAME],      [Enhanced CTorrent])
--m4_define([m4_PACKAGE_TARNAME],   [ctorrent])
--m4_define([m4_PACKAGE_VERSION],   [dnh3.2])
--m4_define([m4_PACKAGE_BUGREPORT], [dholmes@ct.boxmail.com])
-+m4_define([l_PACKAGE_NAME],      [Enhanced CTorrent])
-+m4_define([l_PACKAGE_TARNAME],   [ctorrent])
-+m4_define([l_PACKAGE_VERSION],   [dnh3.2])
-+m4_define([l_PACKAGE_BUGREPORT], [dholmes@ct.boxmail.com])
- 
---- ctorrent-dnh3.2/configure.ac.wiget	2007-07-16 22:53:42.000000000 +0200
-+++ ctorrent-dnh3.2/configure.ac	2008-01-14 19:04:27.000000000 +0100
+diff -burNp ctorrent-dnh3.3.2/configure.ac ctorrent-dnh3.3.2-new/configure.ac
+--- ctorrent-dnh3.3.2/configure.ac	2008-06-15 02:00:19.000000000 +0200
++++ ctorrent-dnh3.3.2-new/configure.ac	2009-01-14 21:26:34.106664532 +0100
 @@ -1,7 +1,7 @@
  # Process this file with autoconf to produce a configure script.
  m4_include([version.m4])
@@ -22,3 +11,16 @@
  AM_INIT_AUTOMAKE([AC_PACKAGE_TARNAME], [AC_PACKAGE_VERSION])
  AC_CONFIG_HEADERS([config.h])
  AC_CONFIG_FILES([Makefile])
+diff -burNp ctorrent-dnh3.3.2/version.m4 ctorrent-dnh3.3.2-new/version.m4
+--- ctorrent-dnh3.3.2/version.m4	2008-06-15 02:00:19.000000000 +0200
++++ ctorrent-dnh3.3.2-new/version.m4	2009-01-14 21:25:32.563963094 +0100
+@@ -1,5 +1,5 @@
+-m4_define([m4_PACKAGE_NAME],      [Enhanced CTorrent])
+-m4_define([m4_PACKAGE_TARNAME],   [ctorrent])
+-m4_define([m4_PACKAGE_VERSION],   [dnh3.3.2])
+-m4_define([m4_PACKAGE_BUGREPORT], [http://sourceforge.net/projects/dtorrent/ or dholmes@ct.boxmail.com])
++m4_define([l_PACKAGE_NAME],      [Enhanced CTorrent])
++m4_define([l_PACKAGE_TARNAME],   [ctorrent])
++m4_define([l_PACKAGE_VERSION],   [dnh3.3.2])
++m4_define([l_PACKAGE_BUGREPORT], [http://sourceforge.net/projects/dtorrent/ or dholmes@ct.boxmail.com])
+ 
