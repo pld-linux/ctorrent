@@ -1,14 +1,13 @@
 Summary:	Enhanced CTorrent - BitTorrent client written in the C++
 Summary(pl.UTF-8):	Enhanced CTorrent - Klient BitTorrenta napisany w C++
 Name:		ctorrent
-Version:	3.2
+Version:	3.3.2
 Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.rahul.net/dholmes/ctorrent/ctorrent-dnh%{version}.tar.gz
-# Source0-md5:	23b37cd7b558ad6a27974b311499bab6
-Patch0:		%{name}-incomplete.patch
-Patch1:		%{name}-m4.patch
+# Source0-md5:	59b23dd05ff70791cd6449effa7fc3b6
+Patch0:		%{name}-m4.patch
 URL:		http://www.rahul.net/dholmes/ctorrent/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
@@ -37,7 +36,6 @@ używa się sieci BitTorrent.
 %prep
 %setup -q -n %{name}-dnh%{version}
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__aclocal}
