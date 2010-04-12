@@ -2,7 +2,7 @@ Summary:	Enhanced CTorrent - BitTorrent client written in the C++
 Summary(pl.UTF-8):	Enhanced CTorrent - Klient BitTorrenta napisany w C++
 Name:		ctorrent
 Version:	3.3.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.rahul.net/dholmes/ctorrent/ctorrent-dnh%{version}.tar.gz
