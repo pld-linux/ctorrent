@@ -36,8 +36,8 @@ używa się sieci BitTorrent.
 
 %prep
 %setup -q -n %{name}-dnh%{version}
-%patch0 -p1
-%patch1 -p0
+%patch -P0 -p1
+%patch -P1 -p0
 
 %build
 %{__aclocal}
